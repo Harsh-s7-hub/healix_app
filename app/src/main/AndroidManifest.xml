@@ -8,6 +8,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
     <uses-permission android:name="android.permission.READ_CALENDAR" />
     <uses-permission android:name="android.permission.WRITE_CALENDAR" />
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 
     <application
@@ -20,9 +21,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Healix"
         tools:targetApi="31">
+
+        <activity
+            android:name=".chatbot.ui.ChatbotActivity"
+            android:exported="true">
+
+
+
+        </activity>
+
         <activity
             android:name=".setting_up_data_page"
             android:exported="false" />
+
         <activity
             android:name=".scheduled_tests"
             android:exported="false" />
@@ -61,6 +72,16 @@
         <activity
             android:name=".CommunityForum"
             android:exported="false" />
+        <activity
+            android:name=".create_community_post_activity"
+            android:exported="true"
+            android:windowSoftInputMode="adjustResize" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity
             android:name=".Person_age"
             android:exported="false" />
@@ -112,11 +133,11 @@
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+<!--            <intent-filter>-->
+<!--                <action android:name="android.intent.action.MAIN" />-->
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+<!--                <category android:name="android.intent.category.LAUNCHER" />-->
+<!--            </intent-filter>-->
         </activity>
 
         <service

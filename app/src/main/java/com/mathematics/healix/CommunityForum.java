@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.view.Window;
 import android.widget.EditText;
 
+import androidx.activity.result.ActivityResultLauncher;
+import androidx.activity.result.contract.ActivityResultContracts;
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
@@ -15,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -32,6 +35,34 @@ public class CommunityForum extends AppCompatActivity {
     private boolean deleting = false;
     private Handler handler = new Handler();
     private long delay = 100;
+
+    private final ActivityResultLauncher<Intent> createPostLauncher =
+            registerForActivityResult(new ActivityResultContracts.StartActivityForResult(), result -> {
+                if (result.getResultCode() != RESULT_OK || result.getData() == null) {
+                    return;
+                }
+
+                Intent data = result.getData();
+                String name = data.getStringExtra(create_community_post_activity.EXTRA_PROFILE_NAME);
+                String description = data.getStringExtra(create_community_post_activity.EXTRA_DESCRIPTION);
+                String date = data.getStringExtra(create_community_post_activity.EXTRA_DATE);
+                String time = data.getStringExtra(create_community_post_activity.EXTRA_TIME);
+                String imageUri = data.getStringExtra(create_community_post_activity.EXTRA_IMAGE_URI);
+
+                CommunityPostModel newPost = new CommunityPostModel(
+                        R.drawable.profilephoto1,
+                        name,
+                        date,
+                        time,
+                        description,
+                        -1,
+                        imageUri
+                );
+
+                communityPostAdapter.addPostAtTop(newPost);
+                communityposts_recyclerview.scrollToPosition(0);
+            });
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -92,6 +123,11 @@ public class CommunityForum extends AppCompatActivity {
 
         communityPostAdapter = new CommunityPostAdapter(postList);
         communityposts_recyclerview.setAdapter(communityPostAdapter);
+
+        ExtendedFloatingActionButton createPostFab = findViewById(R.id.createPostFab);
+        createPostFab.setOnClickListener(v ->
+                createPostLauncher.launch(new Intent(this, create_community_post_activity.class)));
+
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
             Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);

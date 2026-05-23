@@ -1,5 +1,6 @@
 package com.mathematics.healix;
 
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -23,6 +24,11 @@ public class CommunityPostAdapter extends RecyclerView.Adapter<CommunityPostAdap
         this.posts = posts;
     }
 
+    public void addPostAtTop(CommunityPostModel post) {
+        posts.add(0, post);
+        notifyItemInserted(0);
+    }
+
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -39,7 +45,10 @@ public class CommunityPostAdapter extends RecyclerView.Adapter<CommunityPostAdap
         holder.time.setText(post.getTime());
         holder.description.setText(post.getDescription());
 
-        if (post.getPostImage() != -1) {
+        if (post.getImageUri() != null && !post.getImageUri().isEmpty()) {
+            holder.postImage.setVisibility(View.VISIBLE);
+            holder.postImage.setImageURI(Uri.parse(post.getImageUri()));
+        } else if (post.getPostImage() != -1) {
             holder.postImage.setVisibility(View.VISIBLE);
             holder.postImage.setImageResource(post.getPostImage());
         } else {
