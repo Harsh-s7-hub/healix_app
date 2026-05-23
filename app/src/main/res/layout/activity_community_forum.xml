@@ -1,119 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/surface_page"
+    android:orientation="vertical"
     tools:context=".CommunityForum">
 
-
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="659dp"
-        android:layout_marginTop="-5dp"
-        android:orientation="vertical"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0">
+        android:layout_height="0dp"
+        android:layout_weight="1">
 
         <LinearLayout
-
-            android:id="@+id/linearLayout"
             android:layout_width="match_parent"
-            android:layout_height="135dp"
-            android:layout_gravity="top|center"
-
-            android:background="@drawable/home_action_bar_design"
-            android:orientation="vertical"
-            app:layout_constraintBottom_toBottomOf="parent"
-
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.0">
+            android:layout_height="match_parent"
+            android:orientation="vertical">
 
             <LinearLayout
-                android:layout_width="wrap_content"
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-
-                android:layout_gravity="center">
+                android:background="@drawable/home_action_bar_design"
+                android:gravity="center"
+                android:minHeight="@dimen/header_min_height"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                android:paddingBottom="12dp">
 
                 <ImageView
-                    android:layout_width="150dp"
-                    android:layout_height="50dp"
+                    android:layout_width="@dimen/logo_width"
+                    android:layout_height="@dimen/logo_height"
+                    android:adjustViewBounds="true"
                     android:src="@drawable/logo" />
+
+                <EditText
+                    android:id="@+id/searchbox"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/search_bar_height"
+                    android:layout_marginStart="@dimen/screen_margin_horizontal_large"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="@dimen/screen_margin_horizontal_large"
+                    android:background="@drawable/search_bar_design"
+                    android:drawableStart="@drawable/search_icon"
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:maxLines="1"
+                    android:paddingStart="12dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#424142"
+                    android:textSize="17sp" />
             </LinearLayout>
 
-            <EditText
-                android:id="@+id/searchbox"
-                android:layout_width="320dp"
-                android:layout_height="50dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="20dp"
-                android:background="@drawable/search_bar_design"
-                android:drawableStart="@drawable/search_icon"
-                android:fontFamily="@font/poppins_medium"
-                android:gravity="center_vertical"
-                android:imeOptions="actionDone"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:text="Community Forum"
+                android:textColor="@color/text_heading"
+                android:textSize="23sp"
+                tools:ignore="HardcodedText" />
 
-                android:inputType="text"
-                android:maxLines="1"
-                android:paddingStart="12dp"
-                android:paddingTop="13dp"
-                android:paddingEnd="20dp"
-                android:paddingBottom="10dp"
-                android:textColor="@color/black"
-                android:textColorHint="#424142"
-                android:textSize="17sp" />
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/communityposts_recyclerview"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:clipToPadding="false"
+                android:overScrollMode="never"
+                android:paddingStart="@dimen/screen_margin_horizontal"
+                android:paddingTop="8dp"
+                android:paddingEnd="@dimen/screen_margin_horizontal"
+                android:paddingBottom="72dp" />
         </LinearLayout>
 
-        <TextView
+        <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
+            android:id="@+id/createPostFab"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="10dp"
+            android:layout_gravity="bottom|end"
+            android:layout_marginEnd="@dimen/fab_margin_end"
+            android:layout_marginBottom="@dimen/fab_margin_bottom"
             android:fontFamily="@font/poppins_semibold"
-            android:text="Community Forum"
-            android:textColor="#2F2F2F"
-            android:textSize="23sp"
+            android:text="Create Post"
+            android:textColor="@color/white"
+            app:backgroundTint="@color/blue"
+            app:icon="@drawable/ic_plus"
+            app:iconPadding="8dp"
+            app:iconTint="@color/white"
             tools:ignore="HardcodedText" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/communityposts_recyclerview"
-            android:layout_width="wrap_content"
-
-
-            android:layout_height="wrap_content"
-            android:clipToPadding="false"
-            android:overScrollMode="never"
-            android:paddingStart="10dp"
-            android:paddingEnd="10dp" />
-
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="50dp" />
-
-
-    </LinearLayout>
+    </FrameLayout>
 
     <androidx.cardview.widget.CardView
         android:id="@+id/cardView2"
-        android:layout_width="340dp"
-        android:elevation="10dp"
-        android:layout_height="62dp"
-        android:layout_gravity="bottom"
-        android:layout_marginBottom="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/bottom_nav_height"
+        android:layout_marginStart="@dimen/screen_margin_horizontal_large"
+        android:layout_marginEnd="@dimen/screen_margin_horizontal_large"
+        android:layout_marginBottom="@dimen/bottom_nav_margin_bottom"
         android:background="@drawable/rounded_nav_background"
-        app:cardBackgroundColor="#FBFBFB"
+        app:cardBackgroundColor="@color/surface_page"
         app:cardCornerRadius="100dp"
-        app:cardElevation="5dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
+        app:cardElevation="5dp">
 
         <com.google.android.material.bottomnavigation.BottomNavigationView
             android:id="@+id/bottomNavigationView"
@@ -124,27 +121,7 @@
             app:itemIconTint="@color/nav_icon_color"
             app:itemRippleColor="@color/nav_ripple"
             app:labelVisibilityMode="unlabeled"
-            app:menu="@menu/bottom_nav_menu"
-            tools:layout_editor_absoluteX="3dp"
-            tools:layout_editor_absoluteY="467dp" />
-
+            app:menu="@menu/bottom_nav_menu" />
     </androidx.cardview.widget.CardView>
 
-    <com.google.android.material.floatingactionbutton.ExtendedFloatingActionButton
-        android:id="@+id/createPostFab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginEnd="20dp"
-        android:layout_marginBottom="16dp"
-        android:fontFamily="@font/poppins_semibold"
-        android:text="Create Post"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/blue"
-        app:icon="@drawable/ic_plus"
-        app:iconPadding="8dp"
-        app:iconTint="@color/white"
-        app:layout_constraintBottom_toTopOf="@+id/cardView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        tools:ignore="HardcodedText" />
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

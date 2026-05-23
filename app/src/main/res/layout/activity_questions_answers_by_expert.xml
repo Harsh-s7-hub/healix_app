@@ -93,13 +93,17 @@
             </LinearLayout>
 
             <com.google.android.material.card.MaterialCardView
-                android:layout_width="330dp"
-                android:layout_height="240dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="240dp"
                 android:layout_gravity="center"
+                android:layout_marginStart="@dimen/screen_margin_horizontal"
+                android:layout_marginEnd="@dimen/screen_margin_horizontal"
                 android:layout_marginTop="0dp"
-                app:cardBackgroundColor="#F4F3F3"
-                app:cardCornerRadius="15dp"
-                app:strokeColor="@android:color/transparent">
+                app:cardBackgroundColor="@color/surface_card"
+                app:cardCornerRadius="@dimen/card_corner_radius_small"
+                app:strokeColor="@color/border_subtle"
+                app:strokeWidth="1dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"

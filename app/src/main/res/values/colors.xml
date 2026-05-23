@@ -24,4 +24,21 @@
     <color name="bottom_nav_selected">#4CAF50</color>
     <color name="bottom_nav_unselected">#AAAAAA</color>
     <color name="transparent">#00000000</color>
+
+    <!-- Modern surface palette (complements primary blue) -->
+    <color name="surface_page">#FBFBFB</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_elevated">#F7FAFF</color>
+    <color name="surface_muted">#EEF4FC</color>
+    <color name="border_subtle">#E3EDFA</color>
+    <color name="border_soft">#D6E6FA</color>
+    <color name="text_heading">#2F2F2F</color>
+    <color name="text_muted">#767575</color>
+    <color name="text_hint">#818080</color>
+
+    <!-- AI feature banner -->
+    <color name="ai_gradient_start">#0F77F0</color>
+    <color name="ai_gradient_mid">#3B9BFF</color>
+    <color name="ai_gradient_end">#6EC6FF</color>
+    <color name="ai_accent_glow">#33FFFFFF</color>
 </resources>

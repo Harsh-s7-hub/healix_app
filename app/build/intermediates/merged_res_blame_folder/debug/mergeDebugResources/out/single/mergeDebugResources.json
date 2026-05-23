@@ -12,12 +12,20 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\activity_signup_page.xml"
     },
     {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_ic_close_white.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_close_white.xml"
+    },
+    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_chatbot.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\activity_chatbot.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_rounded_button.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\rounded_button.xml"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_shape_ai_float_circle.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\shape_ai_float_circle.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_bottom_nav_indicator.xml.flat",
@@ -54,6 +62,10 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\font_poppins_bold.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\font\\poppins_bold.xml"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_post_form_card_bg.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\post_form_card_bg.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\raw_walk_animation.json.flat",
@@ -112,8 +124,8 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_time.xml"
     },
     {
-        "merged": "com.mathematics.healix.app-debug-52:/drawable_ic_close_white.xml.flat",
-        "source": "com.mathematics.healix.app-main-54:/drawable/ic_close_white.xml"
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_bg_ai_chatbot_banner_gradient.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\bg_ai_chatbot_banner_gradient.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_calorie_burn.xml.flat",
@@ -204,10 +216,6 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_not.xml"
     },
     {
-        "merged": "com.mathematics.healix.app-debug-52:/layout_activity_create_community_post.xml.flat",
-        "source": "com.mathematics.healix.app-main-54:/layout/activity_create_community_post.xml"
-    },
-    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_ic_reports.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_reports.xml"
     },
@@ -234,10 +242,6 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_time.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\time.xml"
-    },
-    {
-        "merged": "com.mathematics.healix.app-debug-52:/layout_activity_community_forum.xml.flat",
-        "source": "com.mathematics.healix.app-main-54:/layout/activity_community_forum.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_plan_day_logo.xml.flat",
@@ -348,12 +352,12 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\activity_healthcheckup.xml"
     },
     {
-        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_ic_heart.xml.flat",
-        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_heart.xml"
-    },
-    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_healthcheckups_listlayout.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\healthcheckups_listlayout.xml"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_ic_heart.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_heart.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_slider_screen.xml.flat",
@@ -396,6 +400,10 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\burnfat_img.png"
     },
     {
+        "merged": "com.mathematics.healix.app-debug-52:/layout_activity_home_page.xml.flat",
+        "source": "com.mathematics.healix.app-main-54:/layout/activity_home_page.xml"
+    },
+    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_healthcheckup_img.png.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\healthcheckup_img.png"
     },
@@ -406,6 +414,10 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_support_icon_inactive.png.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\support_icon_inactive.png"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_shape_ai_float_square.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\shape_ai_float_square.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_male_img.png.flat",
@@ -422,6 +434,10 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_timeicon.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\timeicon.xml"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_post_upload_dashed_bg.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\post_upload_dashed_bg.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_downloadreport_img.png.flat",
@@ -482,10 +498,6 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\font_poppins_medium.ttf.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\font\\poppins_medium.ttf"
-    },
-    {
-        "merged": "com.mathematics.healix.app-debug-52:/drawable_post_form_card_bg.xml.flat",
-        "source": "com.mathematics.healix.app-main-54:/drawable/post_form_card_bg.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_community_forum.xml.flat",
@@ -576,6 +588,10 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\diet_icon_inactive.png"
     },
     {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_bg_ai_new_badge.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\bg_ai_new_badge.xml"
+    },
+    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_ic_share.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\ic_share.xml"
     },
@@ -646,10 +662,6 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\drawable_water_icon.png.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\water_icon.png"
-    },
-    {
-        "merged": "com.mathematics.healix.app-debug-52:/drawable_post_upload_dashed_bg.xml.flat",
-        "source": "com.mathematics.healix.app-main-54:/drawable/post_upload_dashed_bg.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_person_height.xml.flat",
@@ -816,6 +828,10 @@
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\drawable\\nav_item_background.xml"
     },
     {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_layout_ai_chatbot_banner.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\layout_ai_chatbot_banner.xml"
+    },
+    {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\font_poppins_extralight.ttf.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\font\\poppins_extralight.ttf"
     },
@@ -930,6 +946,10 @@
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\color_favourite_selector.xml.flat",
         "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\color\\favourite_selector.xml"
+    },
+    {
+        "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_create_community_post.xml.flat",
+        "source": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-main-54:\\layout\\activity_create_community_post.xml"
     },
     {
         "merged": "C:\\Users\\harsh\\.gradle\\daemon\\8.13\\com.mathematics.healix.app-debug-52:\\layout_activity_week_diet_plan.xml.flat",

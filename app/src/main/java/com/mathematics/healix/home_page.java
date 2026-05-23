@@ -1,12 +1,9 @@
 package com.mathematics.healix;
 
+import android.animation.ObjectAnimator;
 import android.animation.ValueAnimator;
 import android.content.Intent;
-import android.graphics.Color;
-import android.graphics.Matrix;
-import android.graphics.Paint;
-import android.graphics.Shader;
-import android.graphics.SweepGradient;
+import android.graphics.drawable.GradientDrawable;
 import android.os.Bundle;
 import android.os.Handler;
 import android.view.View;
@@ -28,6 +25,8 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.button.MaterialButton;
 import com.google.android.material.card.MaterialCardView;
+
+import com.mathematics.healix.chatbot.ui.ChatbotActivity;
 
 import java.util.ArrayList;
 import java.util.Calendar;
@@ -54,6 +53,7 @@ public class home_page extends AppCompatActivity {
 
         searchBar = findViewById(R.id.searchBar);
         animateHint();
+        setupAiChatbotBanner();
 
 
         RecyclerView carouselRecycler = findViewById(R.id.carousel_recycler);
@@ -197,6 +197,74 @@ public class home_page extends AppCompatActivity {
     }
 
     //trying push
+    private void setupAiChatbotBanner() {
+        MaterialCardView aiBanner = findViewById(R.id.aiChatbotBanner);
+        View gradientBg = findViewById(R.id.aiBannerGradientBg);
+        View shape1 = findViewById(R.id.aiFloatShape1);
+        View shape2 = findViewById(R.id.aiFloatShape2);
+        View shape3 = findViewById(R.id.aiFloatShape3);
+
+        if (aiBanner == null || gradientBg == null) {
+            return;
+        }
+
+        aiBanner.setOnClickListener(v -> startActivity(new Intent(this, ChatbotActivity.class)));
+
+        int blueStart = getResources().getColor(R.color.ai_gradient_start);
+        int blueMid = getResources().getColor(R.color.ai_gradient_mid);
+        int blueEnd = getResources().getColor(R.color.ai_gradient_end);
+        int accent = getResources().getColor(R.color.blue_header);
+
+        ValueAnimator gradientAnimator = ValueAnimator.ofFloat(0f, 1f);
+        gradientAnimator.setDuration(4000);
+        gradientAnimator.setRepeatCount(ValueAnimator.INFINITE);
+        gradientAnimator.setRepeatMode(ValueAnimator.REVERSE);
+        gradientAnimator.setInterpolator(new LinearInterpolator());
+        gradientAnimator.addUpdateListener(animation -> {
+            float fraction = (float) animation.getAnimatedValue();
+            int blendedMid = blendColors(blueMid, accent, fraction);
+            int blendedEnd = blendColors(blueEnd, blueMid, fraction);
+
+            GradientDrawable gradientDrawable = new GradientDrawable(
+                    GradientDrawable.Orientation.TL_BR,
+                    new int[]{blueStart, blendedMid, blendedEnd}
+            );
+            gradientDrawable.setCornerRadius(48f);
+            gradientBg.setBackground(gradientDrawable);
+        });
+        gradientAnimator.start();
+
+        startFloatingAnimation(shape1, 0f, 18f, 12f, 0f, 2800);
+        startFloatingAnimation(shape2, 0f, -14f, -10f, 0f, 3200);
+        startFloatingAnimation(shape3, 0f, 10f, 0f, -8f, 2600);
+    }
+
+    private void startFloatingAnimation(View view, float dx, float dy, float dx2, float dy2, long duration) {
+        if (view == null) {
+            return;
+        }
+
+        ObjectAnimator moveX = ObjectAnimator.ofFloat(view, View.TRANSLATION_X, dx, dx2, dx);
+        ObjectAnimator moveY = ObjectAnimator.ofFloat(view, View.TRANSLATION_Y, dy, dy2, dy);
+        moveX.setDuration(duration);
+        moveY.setDuration(duration);
+        moveX.setRepeatCount(ValueAnimator.INFINITE);
+        moveY.setRepeatCount(ValueAnimator.INFINITE);
+        moveX.setInterpolator(new LinearInterpolator());
+        moveY.setInterpolator(new LinearInterpolator());
+        moveX.start();
+        moveY.start();
+    }
+
+    private int blendColors(int from, int to, float ratio) {
+        float inverse = 1f - ratio;
+        int a = (int) ((android.graphics.Color.alpha(from) * inverse) + (android.graphics.Color.alpha(to) * ratio));
+        int r = (int) ((android.graphics.Color.red(from) * inverse) + (android.graphics.Color.red(to) * ratio));
+        int g = (int) ((android.graphics.Color.green(from) * inverse) + (android.graphics.Color.green(to) * ratio));
+        int b = (int) ((android.graphics.Color.blue(from) * inverse) + (android.graphics.Color.blue(to) * ratio));
+        return android.graphics.Color.argb(a, r, g, b);
+    }
+
     private void animateHint() {
         handler.postDelayed(new Runnable() {
             @Override

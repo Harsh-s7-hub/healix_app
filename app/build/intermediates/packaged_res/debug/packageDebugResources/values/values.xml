@@ -22,9 +22,15 @@
     <array name="preloaded_fonts" translatable="false">
         <item>@font/poppins_bold</item>
     </array>
+    <color name="ai_accent_glow">#33FFFFFF</color>
+    <color name="ai_gradient_end">#6EC6FF</color>
+    <color name="ai_gradient_mid">#3B9BFF</color>
+    <color name="ai_gradient_start">#0F77F0</color>
     <color name="black">#FF000000</color>
     <color name="blue">#0F77F0</color>
     <color name="blue_header">#3F51B5</color>
+    <color name="border_soft">#D6E6FA</color>
+    <color name="border_subtle">#E3EDFA</color>
     <color name="bottom_nav_background">#FFFFFF</color>
     <color name="bottom_nav_selected">#4CAF50</color>
     <color name="bottom_nav_unselected">#AAAAAA</color>
@@ -40,12 +46,42 @@
     <color name="orange">#ff9500</color>
     <color name="pastel_green">#C8E6C9</color>
     <color name="protein_color">#4285F4</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="surface_elevated">#F7FAFF</color>
+    <color name="surface_muted">#EEF4FC</color>
+    <color name="surface_page">#FBFBFB</color>
     <color name="tab_selected">#ff9f00</color>
     <color name="tab_unselected">#FBF0E1</color>
+    <color name="text_heading">#2F2F2F</color>
+    <color name="text_hint">#818080</color>
+    <color name="text_muted">#767575</color>
     <color name="text_primary">#0A2342</color>
     <color name="text_secondary">#666666</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
+    <dimen name="ai_banner_height">115dp</dimen>
+    <dimen name="bottom_nav_height">62dp</dimen>
+    <dimen name="bottom_nav_margin_bottom">20dp</dimen>
+    <dimen name="button_height">56dp</dimen>
+    <dimen name="card_corner_radius">18dp</dimen>
+    <dimen name="card_corner_radius_small">14dp</dimen>
+    <dimen name="carousel_item_width">280dp</dimen>
+    <dimen name="community_post_image_height">180dp</dimen>
+    <dimen name="fab_margin_bottom">16dp</dimen>
+    <dimen name="fab_margin_end">20dp</dimen>
+    <dimen name="header_min_height">120dp</dimen>
+    <dimen name="health_card_height">120dp</dimen>
+    <dimen name="health_card_spacing">12dp</dimen>
+    <dimen name="input_height">48dp</dimen>
+    <dimen name="logo_height">50dp</dimen>
+    <dimen name="logo_width">150dp</dimen>
+    <dimen name="post_image_preview_height">200dp</dimen>
+    <dimen name="post_upload_min_height">160dp</dimen>
+    <dimen name="recycler_item_card_height">205dp</dimen>
+    <dimen name="screen_margin_horizontal">16dp</dimen>
+    <dimen name="screen_margin_horizontal_large">20dp</dimen>
+    <dimen name="search_bar_height">50dp</dimen>
+    <dimen name="section_spacing">16dp</dimen>
     <string name="app_name">Healix</string>
     <string name="gcm_defaultSenderId" translatable="false">348166439924</string>
     <string name="google_api_key" translatable="false">AIzaSyB3tU4XTnysXkvUn_ZQfAgsv7B4ECYJiPg</string>
