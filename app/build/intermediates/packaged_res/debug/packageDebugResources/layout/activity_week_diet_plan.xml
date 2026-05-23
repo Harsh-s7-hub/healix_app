@@ -1,0 +1,750 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/diet_bg"
+    tools:context=".week_diet_plan">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="671dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.454">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="3dp"
+                android:background="#0F77F0"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:background="#FBFBFB"
+                android:layout_marginBottom="10dp"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/backButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+
+                        android:src="@drawable/backbutton"
+                        android:background="@android:color/transparent"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Diet Plan"
+                        android:layout_gravity="center"
+                        tools:ignore="HardcodedText"
+                        android:textSize="23sp"
+                        android:layout_marginStart="100dp"
+
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="#2F2F2F"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+
+                android:layout_marginStart="25dp"
+                android:orientation="vertical"
+                android:layout_marginTop="3dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:id="@+id/food_title"
+                    android:layout_height="wrap_content"
+                    android:text="Low calorie"
+                    android:layout_gravity="start"
+
+                    android:textColor="#000000"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/poppins_bold" />
+
+                <TextView
+                    android:id="@+id/food_subtitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+
+
+                    android:textSize="16dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Low calorie brings you a lot of benefits that make..."
+                    android:textColor="@color/black" />
+
+
+            </LinearLayout>
+
+
+            <!-- Diet Plan Card View -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+               android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="16dp"
+
+                app:cardElevation="4dp">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <!-- Day Tabs -->
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:scrollbars="none">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <!-- Day 1 Tab (Selected) -->
+                            <TextView
+                                android:id="@+id/tab_day1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 1"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/poppins"
+                                android:textStyle="bold"
+                                android:background="@drawable/tab_selected_bg"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <!-- Other Day Tabs -->
+                            <TextView
+                                android:id="@+id/tab_day2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 2"
+                                android:textColor="@color/black"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:fontFamily="@font/poppins"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tab_day3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 3"
+                                android:textColor="@color/black"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:fontFamily="@font/poppins"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tab_day4"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 4"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tab_day5"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 5"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tab_day6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Day 6"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/poppins"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:padding="8dp"
+                                android:layout_marginEnd="8dp"/>
+
+                            <TextView
+                                android:id="@+id/tab_day7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:text="Day 7"
+                                android:textColor="@color/black"
+                                android:background="@drawable/tab_unselected_bg"
+                                android:padding="8dp"/>
+                        </LinearLayout>
+                    </HorizontalScrollView>
+
+                    <!-- Day Title -->
+                    <TextView
+                        android:id="@+id/textDayTitle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Day 1"
+                        android:textColor="@color/black"
+                        android:textSize="22sp"
+                       android:fontFamily="@font/poppins_semibold"
+                        android:layout_marginTop="16dp"/>
+
+                    <!-- Calories and Nutrients -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="16dp">
+
+                        <!-- Calorie Circle -->
+                        <FrameLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="-60dp"
+                            android:layout_weight="1">
+
+                            <ProgressBar
+                                android:id="@+id/calorieProgress"
+                                style="?android:attr/progressBarStyleHorizontal"
+                                android:layout_width="120dp"
+                                android:layout_height="120dp"
+                                android:progress="75"
+                                android:progressDrawable="@drawable/circle_progress"
+                                android:background="@drawable/circle_progress_bg"
+                                android:layout_gravity="center"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:orientation="vertical"
+                                android:gravity="center">
+
+                                <TextView
+                                    android:id="@+id/calorieText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="1000"
+                                    android:textColor="@color/black"
+                                    android:textSize="24sp"
+                                    android:fontFamily="@font/poppins_semibold" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:text="Kcal"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+                            </LinearLayout>
+                        </FrameLayout>
+
+                        <!-- Nutrients -->
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical"
+                            android:layout_marginStart="-70dp"
+                            android:layout_gravity="center_vertical">
+
+                            <!-- Carbs -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_carbs" />
+
+                                <TextView
+                                    android:id="@+id/carbsText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="Carbs 95 g"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/carbs_color"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <!-- Fat -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="8dp"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_fat" />
+
+                                <TextView
+                                    android:id="@+id/fatText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="Fat 45 g"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/fat_color"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+
+                            <!-- Protein -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal"
+                                android:gravity="center_vertical">
+
+                                <ImageView
+                                    android:layout_width="24dp"
+                                    android:layout_height="24dp"
+                                    android:src="@drawable/ic_protein" />
+
+                                <TextView
+                                    android:id="@+id/proteinText"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="8dp"
+                                    android:text="Protein 104 g"
+                                    android:fontFamily="@font/poppins_medium"
+                                    android:textColor="@color/protein_color"
+                                    android:textSize="16sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Breakfast Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Breakfast"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                       android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Breakfast Item -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/meal_card_bg"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img"
+                            android:scaleType="centerCrop"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/breakfastTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:text="1 cup of Yogurt Oatmeal with Raisins"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:id="@+id/breakfastCalories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="300kcal"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/breakfastTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="5min"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/breakfastServings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="2 servings"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Lunch Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lunch"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                       android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Lunch Item -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/meal_card_bg"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img"
+                            android:scaleType="centerCrop"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/lunchTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:text="Pan-fried Chicken Patties"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:id="@+id/lunchCalories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="500kcal"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/lunchTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="25min"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/lunchServings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="5 servings"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Dinner Section -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dinner"
+                        android:textColor="@color/text_primary"
+                        android:textSize="18sp"
+                        android:fontFamily="@font/poppins_bold"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginBottom="8dp"/>
+
+                    <!-- Dinner Item - Added with placeholder content -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/meal_card_bg"
+                        android:orientation="horizontal"
+                        android:padding="12dp">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:src="@drawable/img"
+                            android:scaleType="centerCrop"/>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/dinnerTitle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/poppins"
+                                android:text="Grilled Salmon with Vegetables"
+                                android:textColor="@color/text_primary"
+                                android:textSize="16sp" />
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="4dp">
+
+                                <TextView
+                                    android:id="@+id/dinnerCalories"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:text="400kcal"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/dinnerTime"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="30min"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+
+                                <TextView
+                                    android:id="@+id/dinnerServings"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginStart="16dp"
+                                    android:text="3 servings"
+                                    android:fontFamily="@font/poppins"
+                                    android:textColor="@color/text_secondary"
+                                    android:textSize="12sp" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <!-- Pagination Dots -->
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center"
+                        android:layout_marginTop="24dp">
+
+                        <View
+                            android:id="@+id/indicator_day1"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_active"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day2"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day3"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day4"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day5"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day6"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+
+                        <View
+                            android:id="@+id/indicator_day7"
+                            android:layout_width="8dp"
+                            android:layout_height="8dp"
+                            android:background="@color/indicator_inactive"
+                            android:layout_marginStart="4dp"
+                            android:layout_marginEnd="4dp" />
+                    </LinearLayout>
+
+                    <!-- Start Plan Button -->
+<!--                    <com.google.android.material.button.MaterialButton-->
+<!--                        android:id="@+id/btnStartPlan"-->
+<!--                        android:layout_width="match_parent"-->
+<!--                        android:layout_height="60dp"-->
+<!--                        android:layout_marginTop="24dp"-->
+<!--                        app:backgroundTint="#FFB400"-->
+<!--                        android:fontFamily="@font/poppins_semibold"-->
+<!--                        android:text="START PLAN"-->
+<!--                        android:textColor="@color/white"-->
+<!--                        android:textSize="18sp"-->
+<!--                        android:paddingStart="20dp"-->
+<!--                        android:paddingEnd="20dp"-->
+<!--                        android:drawablePadding="10dp" />-->
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="340dp"
+        android:elevation="10dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_nav_background"
+        app:cardBackgroundColor="#FBFBFB"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/BottomNavIndicator"
+            app:itemIconTint="@color/nav_icon_color"
+            app:itemRippleColor="@color/nav_ripple"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="467dp" />
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

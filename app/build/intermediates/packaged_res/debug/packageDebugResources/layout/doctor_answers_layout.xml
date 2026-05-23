@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+  <com.google.android.material.card.MaterialCardView
+      android:layout_width="330dp"
+      android:layout_height="230dp"
+      app:cardCornerRadius="15dp"
+      app:strokeColor="@android:color/transparent"
+      app:cardBackgroundColor="#F4F3F3"
+      >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      android:orientation="vertical"
+      android:layout_margin="10dp">
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:orientation="horizontal"
+          android:layout_height="wrap_content">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+          android:src="@drawable/doctor_profile"/>
+        <LinearLayout
+            android:layout_width="235dp"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+          android:orientation="vertical">
+          <TextView
+              android:id="@+id/doctorname"
+              android:layout_width="match_parent"
+
+              android:layout_height="wrap_content"
+              android:textColor="#2558E7"
+              android:fontFamily="@font/poppins_semibold"
+              android:textSize="15sp"
+              android:layout_gravity="center"
+              android:text="Dr. Marini Vanitha"/>
+          <TextView
+              android:id="@+id/doctorspecialist"
+              android:layout_width="match_parent"
+              android:layout_marginTop="-7dp"
+              android:layout_height="wrap_content"
+              android:textColor="#888889"
+              android:fontFamily="@font/poppins_medium"
+              android:textSize="13sp"
+              android:layout_gravity="center"
+              android:text="General Physician"/>
+        </LinearLayout>
+        <ImageButton
+            android:id="@+id/thumbsup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/thumbs_up_icon"
+            app:tint="@color/thumbs_up_color" />
+      </LinearLayout>
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:layout_marginTop="20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/doctorresponsetime"
+            android:layout_width="100dp"
+
+            android:layout_height="wrap_content"
+            android:textColor="#888889"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="14sp"
+            android:layout_gravity="center"
+            android:text="2 minutes ago"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:background="#888889"/>
+      </LinearLayout>
+
+
+      <TextView
+          android:id="@+id/doctorsuggestion"
+          android:layout_width="match_parent"
+          android:layout_height="60dp"
+          android:layout_gravity="start"
+          android:layout_marginTop="15dp"
+          android:fontFamily="@font/poppins_medium"
+          android:text="Your SGPT levels are elevated, which may indicate liver stress. To help manage this, avoid oily, fatty, and spicy foods, and completely stay away from alcohol and smoking."
+          android:textColor="@color/black"
+          android:textSize="16sp" />
+
+      <com.google.android.material.button.MaterialButton
+          android:id="@+id/consultdoctor"
+          android:layout_width="match_parent"
+
+          app:backgroundTint="#2558E7"
+          app:rippleColor="#C8C8C8"
+          android:text="Consult Now"
+          android:textColor="@color/white"
+          android:textSize="16sp"
+          android:fontFamily="@font/poppins_semibold"
+          app:cornerRadius="10dp"
+          android:layout_height="50dp"/>
+    </LinearLayout>
+
+  </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home_lab_test">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="671dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="135dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="13dp"
+                android:background="@drawable/home_action_bar_design"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:layout_width="150dp"
+                        android:layout_height="50dp"
+                        android:src="@drawable/logo" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/location"
+                    android:layout_width="320dp"
+                    android:layout_height="50dp"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/search_bar_design"
+                    android:drawableStart="@drawable/location_icon"
+
+                    android:fontFamily="@font/poppins_medium"
+                    android:gravity="center_vertical"
+                    android:paddingStart="12dp"
+                    android:paddingTop="13dp"
+                    android:paddingEnd="20dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/black"
+                    android:textColorHint="#424142"
+                    android:textSize="17sp" />
+            </LinearLayout>
+
+          <TextView
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"
+              android:text="Get Your Lab Tests Started"
+              tools:ignore="HardcodedText"
+              android:textSize="23sp"
+              android:layout_marginStart="12dp"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/poppins_semibold"
+              android:textColor="@color/black"/>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/labchoices_recyclerview"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:overScrollMode="never"
+                />
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/uploadPrescriptionButton"
+                android:layout_gravity="center"
+                android:layout_width="330dp"
+                app:strokeColor="@android:color/transparent"
+                android:layout_height="170dp"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="15dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/uploadcard_gradient">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Upload Prescription"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-5dp"
+                        android:text="Document Formats: .pdf , .jpg , .png"
+                        android:fontFamily="@font/poppins"
+                        android:textColor="@color/white"
+                        android:textSize="12sp"/>
+                    
+                    <Space
+                        android:layout_width="match_parent"
+                        android:layout_height="10dp"/>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="280dp"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="15dp"
+                    app:strokeColor="@android:color/transparent"
+
+                    android:layout_height="90dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:orientation="vertical"
+                        android:background="@android:color/transparent">
+                             <ImageView
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:src="@drawable/upload_icon"/>
+                             <TextView
+                                 android:id="@+id/prescriptiontitle"
+                                 android:layout_width="wrap_content"
+
+                                 android:layout_height="wrap_content"
+                                 android:fontFamily="@font/poppins"
+                                 android:textSize="15sp"
+                                 android:textColor="#5F5F5F"
+                                 android:text="Click to Upload Prescription"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+                </LinearLayout>
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Most Searched Packages"
+                tools:ignore="HardcodedText"
+                android:textSize="23sp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_semibold"
+                android:textColor="@color/black"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/packages_recyclerview"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:clipToPadding="false"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:overScrollMode="never"
+                />
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="340dp"
+        android:elevation="10dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_nav_background"
+        app:cardBackgroundColor="#FBFBFB"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/BottomNavIndicator"
+            app:itemIconTint="@color/nav_icon_color"
+            app:itemRippleColor="@color/nav_ripple"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="467dp" />
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

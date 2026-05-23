@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Base.Theme.Healix" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">#0F77F0</item>
+        <item name="android:statusBarColor">#0F77F0</item>
+        <item name="colorSecondary">#0F77F0</item>
+        <item name="android:textCursorDrawable">@null</item>
+        <item name="colorControlHighlight">#0F77F0</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="colorSurfaceVariant">#0F77F0</item>
+
+        <item name="android:windowBackground">#ffffff</item>
+        <item name="android:navigationBarColor">#0F77F0</item>
+        
+        
+    </style>
+</resources>

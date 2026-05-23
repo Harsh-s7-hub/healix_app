@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StepTrackerActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="679dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="679dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="0dp"
+                android:background="#0F77F0"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <ImageView
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/logo" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+
+
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp"
+                android:background="#FBFBFB"
+                android:gravity="center"
+                android:orientation="vertical"
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/backButton4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="20dp"
+
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/backbutton" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="70dp"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Steps Tracker"
+                        android:textColor="#2F2F2F"
+
+                        android:textSize="23sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <FrameLayout
+                android:id="@+id/step_container"
+                android:layout_width="250dp"
+                android:layout_height="250dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp">
+
+
+                <com.mikhaellopez.circularprogressbar.CircularProgressBar
+                    android:id="@+id/circularProgressBar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:cpb_background_progressbar_color="#D7E6F8"
+                    app:cpb_background_progressbar_width="5dp"
+                    app:cpb_progress_direction="to_right"
+                    app:cpb_progressbar_color="#0F77F0"
+
+                    app:cpb_progressbar_width="10dp"
+                    app:cpb_round_border="false" />
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/imageView"
+                    android:layout_width="225dp"
+                    android:layout_height="225dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="3dp"
+                    android:layout_marginTop="-15dp"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/walk_animation" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/step_count_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="0"
+                android:textColor="#6B6B6B"
+                android:textSize="40sp" />
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="start"
+                android:layout_marginStart="25dp"
+                android:fontFamily="@font/poppins_bold"
+                android:text="This Week"
+                android:textColor="#454545"
+                android:textSize="27sp" />
+             <Space
+                 android:layout_width="match_parent"
+                 android:layout_height="7dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                app:cardBackgroundColor="#FBFBFB"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="4dp"
+                android:layout_gravity="center"
+                app:strokeColor="@android:color/transparent"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content">
+                <org.eazegraph.lib.charts.BarChart
+                    android:id="@+id/barChart"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:padding="10dp"
+                    app:egFixedBarWidth="true">
+
+                </org.eazegraph.lib.charts.BarChart>
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="30dp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="340dp"
+        android:elevation="10dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_nav_background"
+        app:cardBackgroundColor="#FBFBFB"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/BottomNavIndicator"
+            app:itemIconTint="@color/nav_icon_color"
+            app:itemRippleColor="@color/nav_ripple"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="467dp" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

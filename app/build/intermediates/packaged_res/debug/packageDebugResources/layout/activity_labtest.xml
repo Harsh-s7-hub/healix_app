@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+<!--    &lt;!&ndash; Top Blue Header &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/header"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:background="#1E88E5"-->
+<!--        android:gravity="center">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="HEALIX"-->
+<!--            android:textColor="#FFFFFF"-->
+<!--            android:textSize="20sp"-->
+<!--            android:textStyle="bold" />-->
+<!--    </LinearLayout>-->
+
+<!--    &lt;!&ndash; Sub Header with Back Button and Icons &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/subHeader"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_below="@id/header"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:elevation="2dp">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/backButton"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_alignParentStart="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/baseline_arrow_back_24"-->
+<!--            android:contentDescription="Back" />-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:layout_toEndOf="@id/backButton"-->
+<!--            android:text="Lab Tests"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="16sp" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/notificationButton"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/ic_not"-->
+<!--            android:contentDescription="Notifications" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/cartButton"-->
+<!--            android:layout_width="48dp"-->
+<!--            android:layout_height="48dp"-->
+<!--            android:layout_toStartOf="@id/notificationButton"-->
+<!--            android:layout_centerVertical="true"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/baseline_add_shopping_cart_24"-->
+<!--            android:contentDescription="Cart" />-->
+<!--    </RelativeLayout>-->
+
+<!--    &lt;!&ndash; Promotion Banner &ndash;&gt;-->
+<!--    <TextView-->
+<!--        android:id="@+id/promotionBanner"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/subHeader"-->
+<!--        android:layout_alignParentEnd="true"-->
+<!--        android:background="#FFA500"-->
+<!--        android:padding="8dp"-->
+<!--        android:text="Buy 1 Get 1 available"-->
+<!--        android:textColor="#FFFFFF"-->
+<!--        android:textSize="14sp" />-->
+
+<!--    &lt;!&ndash; Test Info Section &ndash;&gt;-->
+<!--    <RelativeLayout-->
+<!--        android:id="@+id/testInfoSection"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_below="@id/subHeader"-->
+<!--        android:padding="16dp">-->
+
+<!--        <ImageView-->
+<!--            android:id="@+id/testIcon"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginEnd="8dp"-->
+<!--            android:src="@drawable/ic_test"-->
+<!--            android:contentDescription="Test Icon" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/testName"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_toEndOf="@id/testIcon"-->
+<!--            android:text="Albumin - Serum"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textStyle="bold" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/favoriteButton"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_marginEnd="43dp"-->
+<!--            android:layout_toStartOf="@id/shareButton"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:contentDescription="Favorite"-->
+<!--            android:src="@drawable/ic_favorite_border" />-->
+
+<!--        &lt;!&ndash; Most Searched Tag &ndash;&gt;-->
+<!--        <ImageButton-->
+<!--            android:id="@+id/shareButton"-->
+<!--            android:layout_width="24dp"-->
+<!--            android:layout_height="24dp"-->
+<!--            android:layout_alignParentEnd="true"-->
+<!--            android:layout_marginEnd="16dp"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:contentDescription="Share"-->
+<!--            android:src="@drawable/ic_share" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/searchTag"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/testName"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:background="@drawable/yellow_bg"-->
+<!--            android:drawableStart="@drawable/ic_search"-->
+<!--            android:drawablePadding="4dp"-->
+<!--            android:padding="4dp"-->
+<!--            android:text="Most Searched"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="12sp" />-->
+
+<!--        &lt;!&ndash; Test Details &ndash;&gt;-->
+<!--        <TextView-->
+<!--            android:id="@+id/prepInfo"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/searchTag"-->
+<!--            android:layout_marginTop="16dp"-->
+<!--            android:text="No Preparation Needed"-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="14sp" />-->
+
+<!--        <LinearLayout-->
+<!--            android:id="@+id/detailsRow"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/prepInfo"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableStart="@drawable/ic_clock"-->
+<!--                android:drawablePadding="4dp"-->
+<!--                android:text="12 Hours"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableStart="@drawable/ic_gender"-->
+<!--                android:drawablePadding="4dp"-->
+<!--                android:text="All"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:drawableStart="@drawable/ic_agegroup"-->
+<!--                android:drawablePadding="4dp"-->
+<!--                android:text="All"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="14sp" />-->
+<!--        </LinearLayout>-->
+
+<!--        &lt;!&ndash; Price Section &ndash;&gt;-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/priceSection"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@id/detailsRow"-->
+<!--            android:layout_marginTop="8dp"-->
+<!--            android:orientation="horizontal">-->
+
+<!--            <LinearLayout-->
+<!--                android:layout_width="0dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_weight="1"-->
+<!--                android:orientation="vertical">-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/originalPrice"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="₹ 160"-->
+<!--                    android:textColor="#B85F63"-->
+<!--                    android:textSize="14sp"-->
+<!--                    android:textDecoration="line-through" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/discountedPrice"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="₹ 125"-->
+<!--                    android:textColor="#000000"-->
+<!--                    android:textSize="18sp"-->
+<!--                    android:textStyle="bold" />-->
+
+<!--                <TextView-->
+<!--                    android:id="@+id/taxInfo"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="(Inclusive of all taxes)"-->
+<!--                    android:textColor="#9E9E9E"-->
+<!--                    android:textSize="12sp" />-->
+<!--            </LinearLayout>-->
+
+<!--            <TextView-->
+<!--                android:id="@+id/savingsInfo"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="You Save 22 %"-->
+<!--                android:textColor="#4CAF50"-->
+<!--                android:textSize="14sp" />-->
+
+<!--            <Button-->
+<!--                android:id="@+id/bookButton"-->
+<!--                android:layout_width="100dp"-->
+<!--                android:layout_height="40dp"-->
+<!--                android:layout_gravity="center_vertical"-->
+<!--                android:background="@drawable/rounded_button"-->
+<!--                android:text="Book"-->
+<!--                android:textColor="#1E88E5" />-->
+<!--        </LinearLayout>-->
+<!--    </RelativeLayout>-->
+
+<!--    &lt;!&ndash; Test Description Section &ndash;&gt;-->
+<!--    <ScrollView-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:layout_below="@id/testInfoSection"-->
+<!--        android:layout_above="@id/bottomNavigation"-->
+<!--        android:padding="16dp">-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:orientation="vertical">-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Lab Test Description :"-->
+<!--                android:textColor="#000000"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold" />-->
+
+<!--            <TextView-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginTop="8dp"-->
+<!--                android:text="The albumin blood test gauges the level of albumin in your blood, potentially indicating liver or kidney issues with low levels and pointing to dehydration with high levels. This vital protein produced by the liver prevents fluid leakage from blood vessels, while also facilitating the transportation of hormones, vitamins and enzymes throughout the body. Inadequate albumin may lead to fluid accumulation in various body regions such as the lungs and abdomen. Also known as ALB or serum albumin test. Book an Albumin Blood test in Chennai with NABL and CAP accredited labs."-->
+<!--                android:textColor="#727984"-->
+<!--                android:textSize="14sp" />-->
+<!--        </LinearLayout>-->
+<!--    </ScrollView>-->
+
+<!--    &lt;!&ndash; Bottom Navigation &ndash;&gt;-->
+<!--    <LinearLayout-->
+<!--        android:id="@+id/bottomNavigation"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="56dp"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:background="#FFFFFF"-->
+<!--        android:elevation="8dp"-->
+<!--        android:orientation="horizontal">-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/homeButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/ic_home"-->
+<!--            android:contentDescription="Home" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/likesButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/ic_likes"-->
+<!--            android:contentDescription="Likes" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/plusButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="@drawable/circle_blue_background"-->
+<!--            android:src="@drawable/ic_plus"-->
+<!--            android:contentDescription="Add" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/reportsButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/ic_reports"-->
+<!--            android:contentDescription="Reports" />-->
+
+<!--        <ImageButton-->
+<!--            android:id="@+id/settingsButton"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:layout_weight="1"-->
+<!--            android:background="?attr/selectableItemBackgroundBorderless"-->
+<!--            android:src="@drawable/ic_settings"-->
+<!--            android:contentDescription="Settings" />-->
+<!--    </LinearLayout>-->
+</RelativeLayout>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_marginTop="15dp"
+
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_height="wrap_content">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="330dp"
+        android:layout_height="300dp"
+        app:strokeColor="@android:color/transparent"
+        app:cardCornerRadius="15dp"
+        app:cardBackgroundColor="#F4F3F3">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+            android:layout_margin="7dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal">
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/communityprofilephoto"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/profilephoto1"
+                    app:shapeAppearanceOverlay="@style/RoundedImage"
+                    android:scaleType="centerCrop"/>
+
+                <LinearLayout
+                    android:layout_width="224dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/communityprofilename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:text="Shivang Bansal"/>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="-3dp"
+                        android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/communityprofiledate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+
+                        android:textColor="#767575"
+                        android:textSize="14sp"
+                        android:text="17 April 2025"/>
+                    <Space
+                        android:layout_width="5dp"
+                        android:layout_height="match_parent"/>
+                    <TextView
+                        android:id="@+id/communityprofiletime"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_medium"
+
+                        android:textColor="#767575"
+                        android:textSize="14sp"
+                        android:text="01:39PM"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <ImageButton
+                    android:id="@+id/favourite3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="?attr/selectableItemBackgroundBorderless"
+                    android:src="@drawable/favourite_icon2"
+                    app:tint="@color/favourite_selector2" />
+
+            </LinearLayout>
+            <TextView
+                android:id="@+id/communityprofiledescription"
+                android:fontFamily="@font/poppins"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"/>
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="160dp"
+                app:cardCornerRadius="15dp"
+                app:strokeColor="@android:color/transparent">
+                <ImageView
+                    android:id="@+id/communityprofileimage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:scaleType="centerCrop"/>
+
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</LinearLayout>

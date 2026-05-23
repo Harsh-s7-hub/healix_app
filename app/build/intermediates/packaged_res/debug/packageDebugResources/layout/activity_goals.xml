@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:background="@drawable/gradient_background"
+    android:padding="16dp"
+    android:layout_height="match_parent"
+
+    tools:context=".GoalsActivity">
+    <LinearLayout
+        android:layout_gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_width="330dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:text="Goals"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_bold"
+            android:textSize="30sp"
+
+           />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="wrap_content"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:text="Let’s start with goals."
+
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="#000000"
+            android:textSize="20sp"
+             />
+
+
+
+
+        <CheckBox
+            android:id="@+id/checkbox_lose_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Lose Weight"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#000000"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+
+        <CheckBox android:id="@+id/checkbox_maintain_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Maintain Weight"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+        <CheckBox android:id="@+id/checkbox_gain_weight"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:text="Gain Weight"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+        <CheckBox android:id="@+id/checkbox_gain_muscle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Gain Muscle"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+        <CheckBox android:id="@+id/checkbox_modify_diet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:text="Modify My Diet"
+            android:textColor="#000000"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+
+        <CheckBox android:id="@+id/checkbox_plan_meals"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Plan Meals"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+        <CheckBox android:id="@+id/checkbox_manage_stress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Manage Stress"
+            android:textColor="#000000"
+            android:fontFamily="@font/poppins_medium"
+            android:textSize="18dp"
+            android:padding="16dp"
+            android:buttonTint="#000000" />
+
+        <!-- Next Button -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_next"
+            android:layout_width="315dp"
+            android:layout_height="57dp"
+            android:layout_marginTop="100dp"
+            app:backgroundTint="@color/blue"
+            android:visibility="invisible"
+
+            android:text="Next"
+            android:layout_gravity="center"
+
+            android:fontFamily="@font/poppins_semibold"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:cornerRadius="10dp"/>
+    </LinearLayout>
+</ScrollView>

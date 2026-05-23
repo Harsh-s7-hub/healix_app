@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ask_free_question_activity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="679dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+
+            android:id="@+id/linearLayout"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="0dp"
+            android:background="#0F77F0"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <ImageView
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/logo" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+
+
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:background="#FBFBFB"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/backButton7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="20dp"
+
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/backbutton" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="55dp"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:text="Ask free question"
+                    android:textColor="#2F2F2F"
+
+                    android:textSize="23sp"
+                    tools:ignore="HardcodedText" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+            <Spinner
+                android:id="@+id/forprofile"
+                android:layout_width="match_parent"
+                android:background="@drawable/question_spinner_layout"
+
+                android:layout_height="55dp"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <Spinner
+                android:id="@+id/problemtype"
+                android:background="@drawable/question_spinner_layout"
+                android:layout_width="match_parent"
+
+                android:layout_height="55dp"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+
+            <EditText
+                android:id="@+id/title"
+                android:layout_width="match_parent"
+                android:layout_height="55dp"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:textColorHint="#818080"
+                android:hint="Title"
+                android:background="@drawable/question_spinner_layout"/>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="15dp"/>
+            <EditText
+                android:id="@+id/description"
+                android:layout_width="match_parent"
+                android:hint="Description"
+                android:gravity="top|start"
+                android:fontFamily="@font/poppins_semibold"
+                android:textSize="19sp"
+                android:textColor="@color/black"
+                android:textColorHint="#818080"
+                android:padding="10dp"
+                android:layout_height="200dp"
+                android:background="@drawable/question_spinner_layout"/>
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="20dp"/>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp">
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/askquestion"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Ask a question"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    android:fontFamily="@font/poppins_semibold"
+                    app:backgroundTint="#0F77F0"
+                    app:rippleColor="#C8C8C8"
+                    app:cornerRadius="10dp" />
+
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    style="?android:attr/progressBarStyle"
+                    android:indeterminateTint="@color/white"
+                    android:visibility="gone"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                     />
+            </FrameLayout>
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="340dp"
+        android:elevation="10dp"
+        android:layout_height="62dp"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/rounded_nav_background"
+        app:cardBackgroundColor="#FBFBFB"
+        app:cardCornerRadius="100dp"
+        app:cardElevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            app:itemActiveIndicatorStyle="@style/BottomNavIndicator"
+            app:itemIconTint="@color/nav_icon_color"
+            app:itemRippleColor="@color/nav_ripple"
+            app:labelVisibilityMode="unlabeled"
+            app:menu="@menu/bottom_nav_menu"
+            tools:layout_editor_absoluteX="3dp"
+            tools:layout_editor_absoluteY="467dp" />
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

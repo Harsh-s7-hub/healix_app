@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+   <item
+       android:id="@+id/nav_home"
+       android:icon="@drawable/selector_nav_home"
+       android:title="Home"/>
+
+   <item
+       android:id="@+id/nav_lab"
+       android:icon="@drawable/selector_nav_labtest"
+       android:title="Lab"/>
+
+   <item
+       android:id="@+id/nav_diet"
+       android:icon="@drawable/selector_nav_diet"
+       android:title="Diet"/>
+
+   <item
+       android:id="@+id/nav_community"
+       android:icon="@drawable/selector_nav_support"
+       android:title="Community"/>
+
+   <item
+       android:id="@+id/nav_settings"
+       android:icon="@drawable/selector_nav_settings"
+       android:title="Settings"/>
+</menu>

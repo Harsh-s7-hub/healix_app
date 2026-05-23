@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/gradient_background"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".Person_age"
+    android:padding="24dp">
+
+    <!-- Spacer to simulate top margin -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="80dp" />
+
+    <!-- Question Text -->
+    <TextView
+        android:id="@+id/questionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your age"
+
+        android:textSize="35sp"
+
+        android:fontFamily="@font/poppins_bold"
+        android:textColor="#000"
+        android:layout_marginTop="-5dp"
+        />
+
+    <!-- Spacer between question and input -->
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="40dp" />
+
+    <!-- Age Input -->
+    <EditText
+        android:id="@+id/ageInput"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:hint="0"
+        android:textColorHint="#929191"
+        android:fontFamily="@font/poppins_medium"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textSize="64sp"
+        android:textColor="#3C3C3C"
+        android:gravity="center"
+        android:background="@android:color/transparent" />
+
+    <!-- years Label -->
+    <TextView
+        android:id="@+id/yearsLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="years"
+        android:fontFamily="@font/poppins_bold"
+        android:textSize="30sp"
+        android:textColor="#000"
+        android:layout_marginTop="4dp" />
+
+    <!-- Spacer to push button to bottom -->
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/age_to_nextbutton"
+        android:layout_width="315dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="50dp"
+        app:backgroundTint="@color/blue"
+
+        android:text="Next"
+        android:layout_gravity="center"
+        android:visibility="invisible"
+        android:fontFamily="@font/poppins_semibold"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:cornerRadius="10dp"/>
+</LinearLayout>
