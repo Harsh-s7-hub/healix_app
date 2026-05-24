@@ -23,9 +23,9 @@
         <item>@font/poppins_bold</item>
     </array>
     <color name="ai_accent_glow">#33FFFFFF</color>
-    <color name="ai_gradient_end">#6EC6FF</color>
-    <color name="ai_gradient_mid">#3B9BFF</color>
-    <color name="ai_gradient_start">#0F77F0</color>
+    <color name="ai_gradient_end">#00F2FE</color>
+    <color name="ai_gradient_mid">#3B82F6</color>
+    <color name="ai_gradient_start">#7B2CBF</color>
     <color name="black">#FF000000</color>
     <color name="blue">#0F77F0</color>
     <color name="blue_header">#3F51B5</color>
@@ -59,7 +59,7 @@
     <color name="text_secondary">#666666</color>
     <color name="transparent">#00000000</color>
     <color name="white">#FFFFFFFF</color>
-    <dimen name="ai_banner_height">115dp</dimen>
+    <dimen name="ai_banner_height">150dp</dimen>
     <dimen name="bottom_nav_height">62dp</dimen>
     <dimen name="bottom_nav_margin_bottom">20dp</dimen>
     <dimen name="button_height">56dp</dimen>

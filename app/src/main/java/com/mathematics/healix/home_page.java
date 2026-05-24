@@ -66,7 +66,7 @@ public class home_page extends AppCompatActivity {
         home_carousel_adapter adapter = new home_carousel_adapter(items);
         carouselRecycler.setAdapter(adapter);
 
-        MaterialButton askyourquestion = findViewById(R.id.askyourquestion);
+        MaterialCardView askyourquestion = findViewById(R.id.askyourquestion);
         askyourquestion.setOnClickListener(v -> {
             Intent intent = new Intent(this, ask_free_question_activity.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP);

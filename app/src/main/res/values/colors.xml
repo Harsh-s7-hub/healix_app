@@ -37,8 +37,8 @@
     <color name="text_hint">#818080</color>
 
     <!-- AI feature banner -->
-    <color name="ai_gradient_start">#0F77F0</color>
-    <color name="ai_gradient_mid">#3B9BFF</color>
-    <color name="ai_gradient_end">#6EC6FF</color>
+    <color name="ai_gradient_start">#7B2CBF</color>
+    <color name="ai_gradient_mid">#3B82F6</color>
+    <color name="ai_gradient_end">#00F2FE</color>
     <color name="ai_accent_glow">#33FFFFFF</color>
 </resources>

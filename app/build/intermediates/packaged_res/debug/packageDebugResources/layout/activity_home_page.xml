@@ -134,16 +134,62 @@
                         android:layout_height="@dimen/health_card_height"
                         android:layout_marginEnd="@dimen/health_card_spacing"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#BCECD6"
                         app:cardCornerRadius="20dp"
                         app:strokeColor="@android:color/transparent">
 
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/steps_icon" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_card_steps" />
+
+                            <!-- Glassmorphic floating circle in the top-left corner (Super-Sized) -->
+                            <View
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="start|top"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="-28dp"
+                                android:alpha="0.25"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Glassmorphic floating circle in the bottom-right corner (Super-Sized) -->
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginEnd="-32dp"
+                                android:layout_marginBottom="-32dp"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Premium Vertical Centered Content -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:src="@drawable/steps_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Steps"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+                        </FrameLayout>
                     </com.google.android.material.card.MaterialCardView>
 
                     <com.google.android.material.card.MaterialCardView
@@ -151,16 +197,62 @@
                         android:layout_width="0dp"
                         android:layout_height="@dimen/health_card_height"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#D7DDFF"
                         app:cardCornerRadius="20dp"
                         app:strokeColor="@android:color/transparent">
 
-                        <ImageView
-                            android:layout_width="100dp"
-                            android:layout_height="100dp"
-                            android:layout_gravity="center"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/sleep_icon" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_card_sleep" />
+
+                            <!-- Glassmorphic floating circle in the top-left corner (Super-Sized) -->
+                            <View
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="start|top"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="-28dp"
+                                android:alpha="0.25"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Glassmorphic floating circle in the bottom-right corner (Super-Sized) -->
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginEnd="-32dp"
+                                android:layout_marginBottom="-32dp"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Premium Vertical Centered Content -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="60dp"
+                                    android:layout_height="60dp"
+                                    android:src="@drawable/sleep_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="3dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Sleep"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+                        </FrameLayout>
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
 
@@ -176,16 +268,62 @@
                         android:layout_height="@dimen/health_card_height"
                         android:layout_marginEnd="@dimen/health_card_spacing"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#FFE3E2"
                         app:cardCornerRadius="20dp"
                         app:strokeColor="@android:color/transparent">
 
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/heart_icon" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_card_heart" />
+
+                            <!-- Glassmorphic floating circle in the top-left corner (Super-Sized) -->
+                            <View
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="start|top"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="-28dp"
+                                android:alpha="0.25"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Glassmorphic floating circle in the bottom-right corner (Super-Sized) -->
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginEnd="-32dp"
+                                android:layout_marginBottom="-32dp"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Premium Vertical Centered Content -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:src="@drawable/heart_icon" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Heart Rate"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+                        </FrameLayout>
                     </com.google.android.material.card.MaterialCardView>
 
                     <com.google.android.material.card.MaterialCardView
@@ -193,16 +331,62 @@
                         android:layout_width="0dp"
                         android:layout_height="@dimen/health_card_height"
                         android:layout_weight="1"
-                        app:cardBackgroundColor="#FFEFD8"
                         app:cardCornerRadius="20dp"
                         app:strokeColor="@android:color/transparent">
 
-                        <ImageView
-                            android:layout_width="80dp"
-                            android:layout_height="80dp"
-                            android:layout_gravity="center"
-                            android:scaleType="centerCrop"
-                            android:src="@drawable/calories_img" />
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:background="@drawable/bg_card_calorie" />
+
+                            <!-- Glassmorphic floating circle in the top-left corner (Super-Sized) -->
+                            <View
+                                android:layout_width="85dp"
+                                android:layout_height="85dp"
+                                android:layout_gravity="start|top"
+                                android:layout_marginStart="-28dp"
+                                android:layout_marginTop="-28dp"
+                                android:alpha="0.25"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Glassmorphic floating circle in the bottom-right corner (Super-Sized) -->
+                            <View
+                                android:layout_width="100dp"
+                                android:layout_height="100dp"
+                                android:layout_gravity="end|bottom"
+                                android:layout_marginEnd="-32dp"
+                                android:layout_marginBottom="-32dp"
+                                android:alpha="0.3"
+                                android:background="@drawable/shape_ai_float_circle" />
+
+                            <!-- Premium Vertical Centered Content -->
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+                                <ImageView
+                                    android:layout_width="55dp"
+                                    android:layout_height="55dp"
+                                    android:src="@drawable/calories_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="6dp"
+                                    android:fontFamily="@font/poppins_semibold"
+                                    android:text="Calories"
+                                    android:textColor="@color/white"
+                                    android:textSize="14sp"
+                                    tools:ignore="HardcodedText" />
+                            </LinearLayout>
+                        </FrameLayout>
                     </com.google.android.material.card.MaterialCardView>
                 </LinearLayout>
             </LinearLayout>
@@ -234,23 +418,58 @@
                     android:paddingStart="@dimen/screen_margin_horizontal"
                     android:paddingEnd="@dimen/screen_margin_horizontal" />
 
-                <com.google.android.material.button.MaterialButton
+                <com.google.android.material.card.MaterialCardView
                     android:id="@+id/askyourquestion"
                     android:layout_width="match_parent"
                     android:layout_height="@dimen/button_height"
                     android:layout_marginTop="8dp"
-                    android:fontFamily="@font/poppins_medium"
-                    android:gravity="center"
-                    android:paddingTop="10dp"
-                    android:text="Ask A free Question"
-                    android:textColor="@color/black"
-                    android:textSize="16sp"
-                    app:backgroundTint="@color/white"
-                    app:cornerRadius="8dp"
-                    app:rippleColor="#CAC9C9"
-                    app:strokeColor="#A2A2A2"
-                    app:strokeWidth="1dp"
-                    tools:ignore="HardcodedText" />
+                    android:clickable="true"
+                    android:focusable="true"
+                    android:foreground="?attr/selectableItemBackground"
+                    app:cardCornerRadius="16dp"
+                    app:cardElevation="2dp"
+                    app:strokeColor="@android:color/transparent">
+
+                    <FrameLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <!-- Modern Blue-Purple Premium Gradient -->
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_button_gradient" />
+
+                        <!-- Glassmorphic floating circle in start -->
+                        <View
+                            android:layout_width="32dp"
+                            android:layout_height="32dp"
+                            android:layout_gravity="start|center_vertical"
+                            android:layout_marginStart="-8dp"
+                            android:alpha="0.25"
+                            android:background="@drawable/shape_ai_float_circle" />
+
+                        <!-- Glassmorphic floating square in end -->
+                        <View
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_gravity="end|center_vertical"
+                            android:layout_marginEnd="-6dp"
+                            android:alpha="0.2"
+                            android:background="@drawable/shape_ai_float_square"
+                            android:rotation="45" />
+
+                        <!-- Button Text -->
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins_semibold"
+                            android:text="Ask A Free Question"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+                    </FrameLayout>
+                </com.google.android.material.card.MaterialCardView>
 
                 <TextView
                     android:layout_width="wrap_content"

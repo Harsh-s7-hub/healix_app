@@ -9,26 +9,26 @@
 9        android:targetSdkVersion="35" />
 10
 11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-11-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:5:5-79
-11-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:5:22-76
+11-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:5:5-79
+11-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:5:22-76
 12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
-12-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:6:5-81
-12-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:6:22-78
+12-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:6:5-81
+12-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:6:22-78
 13    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
-13-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:7:5-79
-13-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:7:22-76
+13-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:7:5-79
+13-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:7:22-76
 14    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
-14-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:8:5-77
-14-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:8:22-74
+14-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:8:5-77
+14-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:8:22-74
 15    <uses-permission android:name="android.permission.READ_CALENDAR" />
-15-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:9:5-72
-15-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:9:22-69
+15-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:9:5-72
+15-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:9:22-69
 16    <uses-permission android:name="android.permission.WRITE_CALENDAR" />
-16-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:10:5-73
-16-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:10:22-70
+16-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:10:5-73
+16-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:10:22-70
 17    <uses-permission android:name="android.permission.INTERNET" />
-17-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:11:5-66
-17-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:11:22-64
+17-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:11:5-66
+17-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:11:22-64
 18    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 18-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\harsh\.gradle\caches\8.13\transforms\bf208bcd4ce54693c07964fe707ae171\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:5-79
 18-->[com.google.firebase:firebase-auth:23.2.0] C:\Users\harsh\.gradle\caches\8.13\transforms\bf208bcd4ce54693c07964fe707ae171\transformed\firebase-auth-23.2.0\AndroidManifest.xml:26:22-76
@@ -69,236 +69,236 @@
 32-->[androidx.core:core:1.13.0] C:\Users\harsh\.gradle\caches\8.13\transforms\4c974485a039cd25152b0f8a859529cc\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
 33
 34    <application
-34-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:14:5-152:19
+34-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:14:5-152:19
 35        android:allowBackup="true"
-35-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:15:9-35
+35-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:15:9-35
 36        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
 36-->[androidx.core:core:1.13.0] C:\Users\harsh\.gradle\caches\8.13\transforms\4c974485a039cd25152b0f8a859529cc\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
 37        android:dataExtractionRules="@xml/data_extraction_rules"
-37-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:16:9-65
+37-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:16:9-65
 38        android:debuggable="true"
 39        android:extractNativeLibs="false"
 40        android:fullBackupContent="@xml/backup_rules"
-40-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:17:9-54
+40-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:17:9-54
 41        android:icon="@drawable/logo_vector_img_for_icon"
-41-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:18:9-58
+41-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:18:9-58
 42        android:label="@string/app_name"
-42-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:19:9-41
+42-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:19:9-41
 43        android:roundIcon="@drawable/logo_vector_img_for_icon"
-43-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:20:9-63
+43-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:20:9-63
 44        android:supportsRtl="true"
-44-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:21:9-35
+44-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:21:9-35
 45        android:testOnly="true"
 46        android:theme="@style/Theme.Healix" >
-46-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:22:9-44
+46-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:22:9-44
 47        <activity
-47-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:25:9-31:20
+47-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:25:9-31:20
 48            android:name="com.mathematics.healix.chatbot.ui.ChatbotActivity"
-48-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:26:13-55
+48-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:26:13-55
 49            android:exported="true" >
-49-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:27:13-36
+49-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:27:13-36
 50        </activity>
 51        <activity
-51-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:33:9-35:40
+51-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:33:9-35:40
 52            android:name="com.mathematics.healix.setting_up_data_page"
-52-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:34:13-49
+52-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:34:13-49
 53            android:exported="false" />
-53-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:35:13-37
+53-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:35:13-37
 54        <activity
-54-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:37:9-39:40
+54-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:37:9-39:40
 55            android:name="com.mathematics.healix.scheduled_tests"
-55-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:38:13-44
+55-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:38:13-44
 56            android:exported="false" />
-56-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:39:13-37
+56-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:39:13-37
 57        <activity
-57-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:40:9-44:20
+57-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:40:9-44:20
 58            android:name="com.mathematics.healix.GoalsActivity"
-58-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:41:13-42
+58-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:41:13-42
 59            android:exported="true" >
-59-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:42:13-36
+59-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:42:13-36
 60        </activity>
 61        <activity
-61-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:45:9-47:39
+61-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:45:9-47:39
 62            android:name="com.mathematics.healix.book_tests"
-62-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:46:13-39
+62-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:46:13-39
 63            android:exported="true" />
-63-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:47:13-36
+63-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:47:13-36
 64        <activity
-64-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:48:9-50:39
+64-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:48:9-50:39
 65            android:name="com.mathematics.healix.healthcheckup_seemore"
-65-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:49:13-50
+65-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:49:13-50
 66            android:exported="true" />
-66-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:50:13-36
+66-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:50:13-36
 67        <activity
-67-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:51:9-53:39
+67-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:51:9-53:39
 68            android:name="com.mathematics.healix.ask_free_question_activity"
-68-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:52:13-55
+68-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:52:13-55
 69            android:exported="true" />
-69-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:53:13-36
+69-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:53:13-36
 70        <activity
-70-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:54:9-56:39
+70-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:54:9-56:39
 71            android:name="com.mathematics.healix.questions_answers_by_expert"
-71-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:55:13-56
+71-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:55:13-56
 72            android:exported="true" />
-72-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:56:13-36
+72-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:56:13-36
 73        <activity
-73-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:57:9-59:39
+73-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:57:9-59:39
 74            android:name="com.mathematics.healix.diet_planning_page"
-74-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:58:13-47
+74-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:58:13-47
 75            android:exported="true" />
-75-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:59:13-36
+75-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:59:13-36
 76        <activity
-76-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:60:9-62:40
+76-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:60:9-62:40
 77            android:name="com.mathematics.healix.trackSample"
-77-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:61:13-40
+77-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:61:13-40
 78            android:exported="false" />
-78-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:62:13-37
+78-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:62:13-37
 79        <activity
-79-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:63:9-65:40
+79-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:63:9-65:40
 80            android:name="com.mathematics.healix.downloadReport"
-80-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:64:13-43
+80-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:64:13-43
 81            android:exported="false" />
-81-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:65:13-37
+81-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:65:13-37
 82        <activity
-82-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:66:9-68:40
+82-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:66:9-68:40
 83            android:name="com.mathematics.healix.lab_tests"
-83-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:67:13-38
+83-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:67:13-38
 84            android:exported="false" />
-84-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:68:13-37
+84-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:68:13-37
 85        <activity
-85-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:69:9-71:40
+85-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:69:9-71:40
 86            android:name="com.mathematics.healix.StepTrackerActivity"
-86-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:70:13-48
+86-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:70:13-48
 87            android:exported="false" />
-87-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:71:13-37
+87-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:71:13-37
 88        <activity
-88-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:72:9-74:40
+88-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:72:9-74:40
 89            android:name="com.mathematics.healix.CommunityForum"
-89-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:73:13-43
+89-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:73:13-43
 90            android:exported="false" />
-90-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:74:13-37
+90-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:74:13-37
 91        <activity
-91-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:75:9-80:20
+91-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:75:9-80:20
 92            android:name="com.mathematics.healix.create_community_post_activity"
-92-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:76:13-59
+92-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:76:13-59
 93            android:exported="true"
-93-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:77:13-36
+93-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:77:13-36
 94            android:windowSoftInputMode="adjustResize" >
-94-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:78:13-55
+94-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:78:13-55
 95        </activity>
 96        <activity
-96-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:81:9-83:40
+96-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:81:9-83:40
 97            android:name="com.mathematics.healix.Person_age"
-97-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:82:13-39
+97-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:82:13-39
 98            android:exported="false" />
-98-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:83:13-37
+98-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:83:13-37
 99        <activity
-99-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:84:9-86:40
+99-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:84:9-86:40
 100            android:name="com.mathematics.healix.Person_height"
-100-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:85:13-42
+100-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:85:13-42
 101            android:exported="false" />
-101-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:86:13-37
+101-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:86:13-37
 102        <activity
-102-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:87:9-89:40
+102-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:87:9-89:40
 103            android:name="com.mathematics.healix.Enter_weight"
-103-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:88:13-41
+103-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:88:13-41
 104            android:exported="false" />
-104-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:89:13-37
+104-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:89:13-37
 105        <activity
-105-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:90:9-92:40
+105-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:90:9-92:40
 106            android:name="com.mathematics.healix.week_diet_plan"
-106-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:91:13-43
+106-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:91:13-43
 107            android:exported="false" />
-107-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:92:13-37
+107-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:92:13-37
 108        <activity
-108-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:93:9-95:40
+108-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:93:9-95:40
 109            android:name="com.mathematics.healix.healthCheckups"
-109-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:94:13-43
+109-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:94:13-43
 110            android:exported="false" />
-110-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:95:13-37
+110-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:95:13-37
 111        <activity
-111-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:96:9-98:40
+111-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:96:9-98:40
 112            android:name="com.mathematics.healix.sleep_cycle"
-112-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:97:13-40
+112-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:97:13-40
 113            android:exported="false" />
-113-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:98:13-37
+113-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:98:13-37
 114        <activity
-114-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:99:9-101:40
+114-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:99:9-101:40
 115            android:name="com.mathematics.healix.calorie_burn"
-115-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:100:13-41
+115-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:100:13-41
 116            android:exported="false" />
-116-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:101:13-37
+116-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:101:13-37
 117        <activity
-117-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:102:9-104:40
+117-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:102:9-104:40
 118            android:name="com.mathematics.healix.heart_rate"
-118-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:103:13-39
+118-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:103:13-39
 119            android:exported="false" />
-119-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:104:13-37
+119-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:104:13-37
 120        <activity
-120-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:105:9-107:40
+120-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:105:9-107:40
 121            android:name="com.mathematics.healix.GetStarted"
-121-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:106:13-39
+121-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:106:13-39
 122            android:exported="false" />
-122-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:107:13-37
+122-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:107:13-37
 123        <activity
-123-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:108:9-110:40
+123-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:108:9-110:40
 124            android:name="com.mathematics.healix.NavigationActivity"
-124-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:109:13-47
+124-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:109:13-47
 125            android:exported="false" />
-125-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:110:13-37
+125-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:110:13-37
 126        <activity
-126-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:111:9-113:40
+126-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:111:9-113:40
 127            android:name="com.mathematics.healix.home_lab_test"
-127-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:112:13-42
+127-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:112:13-42
 128            android:exported="false" />
-128-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:113:13-37
+128-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:113:13-37
 129        <activity
-129-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:114:9-116:40
+129-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:114:9-116:40
 130            android:name="com.mathematics.healix.signup_Page"
-130-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:115:13-40
+130-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:115:13-40
 131            android:exported="false" />
-131-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:116:13-37
+131-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:116:13-37
 132        <activity
-132-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:117:9-119:40
+132-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:117:9-119:40
 133            android:name="com.mathematics.healix.genderSelection"
-133-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:118:13-44
+133-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:118:13-44
 134            android:exported="false" />
-134-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:119:13-37
+134-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:119:13-37
 135        <activity
-135-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:120:9-122:40
+135-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:120:9-122:40
 136            android:name="com.mathematics.healix.login_Page"
-136-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:121:13-39
+136-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:121:13-39
 137            android:exported="false" />
-137-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:122:13-37
+137-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:122:13-37
 138        <activity
-138-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:123:9-125:40
+138-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:123:9-125:40
 139            android:name="com.mathematics.healix.start_page"
-139-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:124:13-39
+139-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:124:13-39
 140            android:exported="false" />
-140-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:125:13-37
+140-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:125:13-37
 141        <activity
-141-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:126:9-134:20
+141-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:126:9-134:20
 142            android:name="com.mathematics.healix.home_page"
-142-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:127:13-38
+142-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:127:13-38
 143            android:exported="true" >
-143-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:128:13-36
+143-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:128:13-36
 144            <intent-filter>
-144-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:129:13-133:29
+144-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:129:13-133:29
 145                <action android:name="android.intent.action.MAIN" />
-145-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:130:17-69
-145-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:130:25-66
+145-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:130:17-69
+145-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:130:25-66
 146
 147                <category android:name="android.intent.category.LAUNCHER" />
-147-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:132:17-77
-147-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:132:27-74
+147-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:132:17-77
+147-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:132:27-74
 148            </intent-filter>
 149        </activity>
 150        <activity
-150-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:135:9-143:20
+150-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:135:9-143:20
 151            android:name="com.mathematics.healix.MainActivity"
-151-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:136:13-41
+151-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:136:13-41
 152            android:exported="true" >
-152-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:137:13-36
+152-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:137:13-36
 153
 154            <!-- <intent-filter> -->
 155            <!-- <action android:name="android.intent.action.MAIN" /> -->
@@ -309,18 +309,18 @@
 160        </activity>
 161
 162        <service
-162-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:145:9-147:40
+162-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:145:9-147:40
 163            android:name="com.mathematics.healix.StepCounterService"
-163-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:146:13-47
+163-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:146:13-47
 164            android:exported="false" />
-164-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:147:13-37
+164-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:147:13-37
 165
 166        <meta-data
-166-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:149:9-151:57
+166-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:149:9-151:57
 167            android:name="preloaded_fonts"
-167-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:150:13-43
+167-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:150:13-43
 168            android:resource="@array/preloaded_fonts" />
-168-->C:\Users\harsh\healix_app\Healix\app\src\main\AndroidManifest.xml:151:13-54
+168-->D:\healix_app\Healix\app\src\main\AndroidManifest.xml:151:13-54
 169
 170        <service
 170-->[androidx.health.connect:connect-client:1.1.0-alpha06] C:\Users\harsh\.gradle\caches\8.13\transforms\0f8aea28347f13c270f16cc92b7149e7\transformed\connect-client-1.1.0-alpha06\AndroidManifest.xml:24:9-32:19

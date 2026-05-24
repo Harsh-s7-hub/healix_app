@@ -79,6 +79,11 @@ drawable baseline_arrow_back_24
 drawable bg2
 drawable bg_ai_chatbot_banner_gradient
 drawable bg_ai_new_badge
+drawable bg_button_gradient
+drawable bg_card_calorie
+drawable bg_card_heart
+drawable bg_card_sleep
+drawable bg_card_steps
 drawable blue_header_bg
 drawable book_test_selector_design
 drawable booked_test_icon
@@ -129,6 +134,7 @@ drawable home_icon_inactive
 drawable home_page_bg5
 drawable house
 drawable ic_agegroup
+drawable ic_ai_sparkles
 drawable ic_carbs
 drawable ic_cart
 drawable ic_clock
@@ -243,6 +249,7 @@ id ageInput
 id age_to_nextbutton
 id agegroup
 id aiBannerGradientBg
+id aiChatbotAnimation
 id aiChatbotBanner
 id aiChatbotBannerInclude
 id aiFloatShape1
@@ -524,6 +531,7 @@ layout spinner_item_layout
 menu bottom_nav_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
+raw ai
 raw calorie_animation
 raw heart_animation
 raw setting_up_app
