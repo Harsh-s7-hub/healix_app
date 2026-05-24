@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/aiChatbotBanner"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/ai_banner_height"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?attr/selectableItemBackground"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="6dp"
+    app:strokeColor="@android:color/transparent">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/aiBannerGradientBg"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg_ai_chatbot_banner_gradient" />
+
+        <!-- Glassmorphic floating particle details -->
+        <View
+            android:id="@+id/aiFloatShape1"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="start|top"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="12dp"
+            android:alpha="0.35"
+            android:background="@drawable/shape_ai_float_circle" />
+
+        <View
+            android:id="@+id/aiFloatShape2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="end|center_vertical"
+            android:layout_marginEnd="80dp"
+            android:alpha="0.25"
+            android:background="@drawable/shape_ai_float_square"
+            android:rotation="18" />
+
+        <View
+            android:id="@+id/aiFloatShape3"
+            android:layout_width="14dp"
+            android:layout_height="14dp"
+            android:layout_gravity="end|bottom"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="14dp"
+            android:alpha="0.4"
+            android:background="@drawable/shape_ai_float_square"
+            android:rotation="45" />
+
+        <!-- Main Banner Content -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp">
+
+            <!-- Premium Glassmorphic AI Lottie Animation Container -->
+            <FrameLayout
+                android:layout_width="140dp"
+                android:layout_height="140dp"
+                android:background="@drawable/circle_blue_background"
+                android:backgroundTint="#25FFFFFF"
+                android:padding="2dp">
+
+                <com.airbnb.lottie.LottieAnimationView
+                    android:id="@+id/aiChatbotAnimation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    app:lottie_autoPlay="true"
+                    app:lottie_loop="true"
+                    app:lottie_rawRes="@raw/ai" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:text="Medify.ai"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        tools:ignore="HardcodedText" />
+
+                    <!-- Neon Teal Glow Badge -->
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:background="@drawable/bg_ai_new_badge"
+                        android:backgroundTint="#3300F2FE"
+                        android:fontFamily="@font/poppins_semibold"
+                        android:paddingStart="8dp"
+                        android:paddingTop="2dp"
+                        android:paddingEnd="8dp"
+                        android:paddingBottom="2dp"
+                        android:text="NEW"
+                        android:textColor="#00F2FE"
+                        android:textSize="10sp"
+                        tools:ignore="HardcodedText" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="2dp"
+                    android:alpha="0.92"
+                    android:fontFamily="@font/poppins"
+                    android:text="Get instant health answers powered by AI"
+                    android:textColor="@color/white"
+                    android:textSize="12sp"
+                    tools:ignore="HardcodedText" />
+            </LinearLayout>
+
+            <!-- Premium Glassmorphic Arrow Button -->
+            <FrameLayout
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:background="@drawable/circle_blue_background"
+                android:backgroundTint="#20FFFFFF">
+
+
+            </FrameLayout>
+        </LinearLayout>
+    </FrameLayout>
+</com.google.android.material.card.MaterialCardView>

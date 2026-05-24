@@ -1,0 +1,16 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="48dp"
+    android:height="48dp"
+    android:viewportWidth="48"
+    android:viewportHeight="48">
+    
+    <!-- Main Sparkle -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M 20,4 C 20,12.84 27.16,20 36,20 C 27.16,20 20,27.16 20,36 C 20,27.16 12.84,20 4,20 C 12.84,20 20,12.84 20,4 Z" />
+        
+    <!-- Secondary Sparkle -->
+    <path
+        android:fillColor="#FFE86B"
+        android:pathData="M 36,22 C 36,26.42 39.58,30 44,30 C 39.58,30 36,33.58 36,38 C 36,33.58 32.42,30 28,30 C 32.42,30 36,26.42 36,22 Z" />
+</vector>
